@@ -47,7 +47,7 @@ jobs:
           python-version: 3.14
 
       - name: Install test dependencies.
-        run: pip3.14 install ansible ansible-core=>2.20.0 molecule docker molecule-plugins
+        run: pip3.14 install ansible ansible-core>=2.20.0 molecule docker molecule-plugins
 
       - name: Build the collection
         run: |
